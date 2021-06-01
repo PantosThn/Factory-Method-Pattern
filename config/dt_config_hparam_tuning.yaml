@@ -1,0 +1,9 @@
+name: 'dt'
+tune: True
+hparams:
+    model__max_depth:
+        - 2
+        - 3
+preprocessing:
+    - normalization
+    - simple_impute

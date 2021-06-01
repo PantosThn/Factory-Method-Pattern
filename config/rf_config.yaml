@@ -1,0 +1,9 @@
+name: 'rf'
+tune: False
+hparams:
+    n_estimators: 40
+    max_depth: 3
+    verbose: 1
+preprocessing:
+    - normalization
+    - simple_impute

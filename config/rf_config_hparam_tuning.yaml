@@ -1,0 +1,20 @@
+name: 'rf'
+tune: True
+hparams:
+    model__n_estimators:
+        - 30
+        - 40
+        - 50
+    model__max_depth:
+        - 2
+        - 3
+    model__verbose:
+        - 10
+    pca__n_components:
+        - 2
+        - 3
+        - 4
+preprocessing:
+    - normalization
+    - simple_impute
+    - pca
